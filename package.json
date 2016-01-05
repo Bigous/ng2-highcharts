@@ -1,43 +1,45 @@
 {
-	"name": "ng2-highcharts",
-	"version": "0.1.0",
-	"scripts": {
-		"test": "tsc && karma start",
-		"prepublish": "tsc",
-		"tsc": "tsc"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Bigous/ng2-highcharts"
-	},
-	"author": {
-		"name": "Richard Natal",
-		"email": "Bigous@users.noreply.github.com"
-	},
-	"keywords": [
-		"angular",
-		"angular2",
-		"highcharts"
-	],
-	"bugs": {
-		"url": "https://github.com/Bigous/ng2-highcharts/issues"
-	},
-	"main": "ng2-highcharts.js",
-	"typings": "./ng2-highcharts.d.ts",
-	"dependencies": {
-		"angular2": "^2.0.0-beta.0",
-		"bootstrap": "^3.3.5",
-		"es6-module-loader": "^0.17.8",
-		"es6-shim": "^0.33.3",
-		"reflect-metadata": "^0.1.2",
-		"rxjs": "5.0.0-beta.0",
-		"systemjs": "^0.19.4",
-		"zone.js": "0.5.10"
-	},
-	"devDependencies": {
-		"typescript": "^1.7.3"
-	},
-	"engines": {
-		"node": ">=4.2.0"
-	}
+  "name": "ng2-highcharts",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "tsc && karma start",
+    "prepublish": "tsc",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bigous/ng2-highcharts"
+  },
+  "author": {
+    "name": "Richard Natal",
+    "email": "Bigous@users.noreply.github.com"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "highcharts"
+  ],
+  "bugs": {
+    "url": "https://github.com/Bigous/ng2-highcharts/issues"
+  },
+  "main": "ng2-highcharts.js",
+  "typings": "./ng2-highcharts.d.ts",
+  "dependencies": {
+    "angular2": "^2.0.0-beta.0",
+    "bootstrap": "^3.3.5",
+    "es6-module-loader": "^0.17.8",
+    "es6-shim": "^0.33.3",
+    "highcharts": "^4.2.1",
+    "jquery": "^2.1.4",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "5.0.0-beta.0",
+    "systemjs": "^0.19.4",
+    "zone.js": "0.5.10"
+  },
+  "devDependencies": {
+    "typescript": "^1.7.3"
+  },
+  "engines": {
+    "node": ">=4.2.0"
+  }
 }
