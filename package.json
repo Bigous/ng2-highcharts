@@ -2,7 +2,7 @@
   "name": "ng2-highcharts",
   "version": "0.1.0",
   "scripts": {
-    "test": "tsc && karma start",
+    "test": "tsc && echo No tests available yet...",
     "prepublish": "tsc",
     "tsc": "tsc"
   },
