@@ -7,9 +7,6 @@
   "installed": {
     "highcharts/highcharts.d.ts": {
       "commit": "6a6ad7068a177c0d7a8a20830626cb63277191c5"
-    },
-    "jquery/jquery.d.ts": {
-      "commit": "6a6ad7068a177c0d7a8a20830626cb63277191c5"
     }
   }
 }
