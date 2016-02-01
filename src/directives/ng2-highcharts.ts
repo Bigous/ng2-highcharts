@@ -10,11 +10,6 @@ export class Ng2Highcharts {
 	renderTo: HighchartsOptions;
 	constructor(ele: ElementRef) {
 		this.hostElement = ele;
-		this.renderTo = {
-			chart: {
-				renderTo: this.hostElement.nativeElement
-			}
-		};
 	}
 
 	@Input('ng2-highcharts') set options(opt:HighchartsOptions) {
@@ -27,7 +22,10 @@ export class Ng2Highcharts {
 			if(this.chart) {
 				this.chart.destroy();
 			}
-			opt = Object.assign(opt, this.renderTo);
+			if (!opt.chart) {
+				opt.chart = {};
+			}
+			opt.chart.renderTo = this.hostElement.nativeElement;
 			this.chart = new Highcharts.Chart(opt);
 		} else {
 			console.log('No valid options...');
