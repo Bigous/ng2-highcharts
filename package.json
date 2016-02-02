@@ -1,6 +1,6 @@
 {
   "name": "ng2-highcharts",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "scripts": {
     "test": "tsd reinstall --clean tsc && echo No tests available yet...",
     "prepublish": "tsd reinstall --clean && tsc",
