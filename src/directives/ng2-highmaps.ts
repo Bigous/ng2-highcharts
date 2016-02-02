@@ -27,7 +27,7 @@ export class Ng2Highmaps {
 			}
 			opt.chart.renderTo = this.hostElement.nativeElement;
 			let HC: any = Highcharts;
-			this.chart = new HC.Chart('Map', opt);
+			this.chart = new HC.Map(opt);
 		} else {
 			console.log('No valid options...');
 			console.dir(opt);
