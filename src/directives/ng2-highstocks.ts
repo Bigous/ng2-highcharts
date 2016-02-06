@@ -7,10 +7,10 @@ declare var jQuery: any;
 	selector: '[ng2-highstocks]'
 })
 export class Ng2Highstocks {
-	jqEle: any;
+	hostElement: ElementRef;
 	chart: HighchartsChartObject;
 	constructor(ele: ElementRef) {
-		this.jqEle = jQuery(ele.nativeElement);
+		this.hostElement = ele;
 	}
 
 	@Input('ng2-highstocks') set options(opt:HighchartsOptions) {
@@ -23,7 +23,11 @@ export class Ng2Highstocks {
 			if(this.chart) {
 				this.chart.destroy();
 			}
-			this.chart = this.jqEle.highcharts('StockChart', opt);
+            if (!opt.chart) {
+				opt.chart = {};
+			}
+			opt.chart.renderTo = this.hostElement.nativeElement;
+			this.chart = new Highcharts.StockChart(opt);
 		} else {
 			console.log('No valid options...');
 			console.dir(opt);
