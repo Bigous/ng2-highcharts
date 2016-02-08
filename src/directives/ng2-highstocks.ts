@@ -1,8 +1,6 @@
 /// <reference path="../../typings/highcharts/highcharts.d.ts" />
 import {Directive, ElementRef, Input} from 'angular2/core';
 
-declare var jQuery: any;
-
 @Directive({
 	selector: '[ng2-highstocks]'
 })
