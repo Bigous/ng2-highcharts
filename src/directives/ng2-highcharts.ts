@@ -31,4 +31,10 @@ export class Ng2Highcharts {
 			console.dir(opt);
 		}
 	}
+	
+	ngOnDestroy() {
+		if (this.chart) {
+			this.chart.destroy();
+		}
+	}
 }
