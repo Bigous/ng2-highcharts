@@ -23,7 +23,7 @@ A running example on how to use this library can be found at [AngularShowcase](h
 ## Contributors
 
 [<img alt="Bigous" src="https://avatars.githubusercontent.com/u/6886560?v=3&s=117" width="117">](https://github.com/Bigous) |[<img alt="NathanWalker" src="https://avatars.githubusercontent.com/u/457187?v=3&s=117" width="117">](https://github.com/NathanWalker) |[<img alt="drdino" src="https://avatars.githubusercontent.com/u/2923711?v=3&s=117" width="117">](https://github.com/drdino) |[<img alt="k3nsei" src="https://avatars.githubusercontent.com/u/190411?v=3&s=117" width="117">](https://github.com/k3nsei) |
-:---: |:---: |:---: |
+:---: |:---: |:---: |:---: |
 [Bigous](https://github.com/Bigous) |[NathanWalker](https://github.com/NathanWalker) |[drdino](https://github.com/drdino) |[k3nsei](https://github.com/k3nsei) |
 
 
