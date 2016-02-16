@@ -1,10 +1,10 @@
 /// <reference path="../../typings/highcharts/highcharts.d.ts" />
-import {Directive, ElementRef, Input} from 'angular2/core';
+import {Directive, ElementRef, Input, OnDestroy} from 'angular2/core';
 
 @Directive({
 	selector: '[ng2-highmaps]'
 })
-export class Ng2Highmaps {
+export class Ng2Highmaps implements OnDestroy {
 	hostElement: ElementRef;
 	chart: HighchartsChartObject;
 	constructor(ele: ElementRef) {
@@ -31,7 +31,7 @@ export class Ng2Highmaps {
 			console.dir(opt);
 		}
 	}
-	
+
 	ngOnDestroy() {
 		if (this.chart) {
 			this.chart.destroy();
