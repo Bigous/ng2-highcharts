@@ -20,6 +20,14 @@ To use this library, you must load ```angular2``` (and its dependencies), ```jqu
 
 A running example on how to use this library can be found at [AngularShowcase](http://github.com/AngularShowcase/angular2-seed-ng2-highcharts) or [here](http://github.com/Bigous/angular2-seed-ng2-highcharts).
 
+## Contributors
+
+[<img alt="Bigous" src="https://avatars.githubusercontent.com/u/6886560?v=3&s=117" width="117">](https://github.com/Bigous) |[<img alt="NathanWalker" src="https://avatars.githubusercontent.com/u/457187?v=3&s=117" width="117">](https://github.com/NathanWalker) |[<img alt="drdino" src="https://avatars.githubusercontent.com/u/2923711?v=3&s=117" width="117">](https://github.com/drdino) |[<img alt="k3nsei" src="https://avatars.githubusercontent.com/u/190411?v=3&s=117" width="117">](https://github.com/k3nsei) |
+:---: |:---: |:---: |
+[Bigous](https://github.com/Bigous) |[NathanWalker](https://github.com/NathanWalker) |[drdino](https://github.com/drdino) |[k3nsei](https://github.com/k3nsei) |
+
+
+
 ## License
 
 MIT © [Richard Natal](http://github.com/Bigous)
