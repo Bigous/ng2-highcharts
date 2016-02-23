@@ -2,9 +2,9 @@
   "name": "ng2-highcharts",
   "version": "0.2.6",
   "scripts": {
-    "test": "tsd reinstall --clean tsc && echo No tests available yet...",
-    "prepublish": "tsd reinstall --clean && tsc",
-    "tsc": "tsd reinstall --clean tsc"
+    "test": "typings install && echo No tests available yet...",
+    "prepublish": "typings install && tsc",
+    "tsc": "typings install && tsc"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.0",
     "typescript": "^1.7.3",
+    "typings": "^0.6.8",
     "zone.js": "0.5.10"
   },
   "engines": {

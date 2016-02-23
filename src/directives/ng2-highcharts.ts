@@ -1,4 +1,4 @@
-/// <reference path="../../typings/highcharts/highcharts.d.ts" />
+/// <reference path="../../typings/browser.d.ts" />
 import {Directive, ElementRef, Input, OnDestroy} from 'angular2/core';
 
 @Directive({

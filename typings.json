@@ -1,0 +1,6 @@
+{
+  "name": "ng2-highcharts",
+  "ambientDependencies": {
+    "highcharts": "github:DefinitelyTyped/DefinitelyTyped/highcharts/highcharts.d.ts#6a6ad7068a177c0d7a8a20830626cb63277191c5"
+  }
+}
