@@ -43,6 +43,7 @@ A running example on how to use this library can be found at [AngularShowcase](h
   }  
   ```
 * Prepare Chart Data
+
   ```
   private chartData = {
     chart: {
