@@ -2,11 +2,12 @@
 import {Directive, ElementRef, Input, OnDestroy} from 'angular2/core';
 
 @Directive({
-	selector: '[ng2-highmaps]'
+	selector: '[ng2-highmaps]',
+	exportAs: 'ng2Highmaps'
 })
 export class Ng2Highmaps implements OnDestroy {
 	hostElement: ElementRef;
-	chart: HighchartsChartObject;
+	pChart: HighchartsChartObject;
 	constructor(ele: ElementRef) {
 		this.hostElement = ele;
 	}
@@ -18,23 +19,29 @@ export class Ng2Highmaps implements OnDestroy {
 			return;
 		}
 		if (opt.series || opt.data) {
-			if (this.chart) {
-				this.chart.destroy();
+			if (this.pChart) {
+				this.pChart.destroy();
 			}
 			if (!opt.chart) {
 				opt.chart = {};
 			}
 			opt.chart.renderTo = this.hostElement.nativeElement;
-			this.chart = new (<any>Highcharts).Map(opt);
+			this.pChart = new (<any>Highcharts).Map(opt);
 		} else {
 			console.log('No valid options...');
 			console.dir(opt);
 		}
 	}
 
+
+	public get chart() : HighchartsChartObject {
+		return this.pChart;
+	}
+
+
 	ngOnDestroy() {
-		if (this.chart) {
-			this.chart.destroy();
+		if (this.pChart) {
+			this.pChart.destroy();
 		}
 	}
 }
