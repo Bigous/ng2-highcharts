@@ -1,6 +1,6 @@
 # 0.3.0
 
-1. Exports the directive object, so you can interact with the directive inside the template without having to write code (see it better explained here)[http://blog.thoughtram.io/angular/2016/03/21/template-driven-forms-in-angular-2.html]
+1. Exports the directive object, so you can interact with the directive inside the template without having to write code [see it better explained here](http://blog.thoughtram.io/angular/2016/03/21/template-driven-forms-in-angular-2.html)
 	1. `ng2-highcharts` is exported as `ng2Highcharts`
 	- `ng2-highmaps` is exported as `ng2Highmaps`
 	- `ng2-highstock` is exported as `ng2Highstock`

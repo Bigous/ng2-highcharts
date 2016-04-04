@@ -80,7 +80,7 @@ A running example on how to use this library can be found at [AngularShowcase](h
   ```
 ## Changelog
 
-Look at (changelog page)[CHANGELOG.md]
+Look at [changelog page](CHANGELOG.md)
 
 ## Contributors
 
