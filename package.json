@@ -1,6 +1,6 @@
 {
   "name": "ng2-highcharts",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "scripts": {
     "test": "typings install && echo No tests available yet...",
     "prepublish": "typings install && tsc",
