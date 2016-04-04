@@ -39,8 +39,8 @@ A running example on how to use this library can be found at [AngularShowcase](h
     ]
   })
   export class UsingNg2HighchartsComponent {
-    
-  }  
+
+  }
   ```
 * Prepare Chart Data
   ```
@@ -78,6 +78,9 @@ A running example on how to use this library can be found at [AngularShowcase](h
   ```
   <div [ng2-highcharts]="chartData"></div>
   ```
+## Changelog
+
+Look at (changelog page)[CHANGELOG.md]
 
 ## Contributors
 
