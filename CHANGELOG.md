@@ -1,5 +1,5 @@
 # 0.3.2
-Upgraded to support Angyular 2.0.0-rc.1
+Upgraded to support Angular 2.0.0-rc.1
 
 # 0.3.0
 
