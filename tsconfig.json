@@ -9,6 +9,7 @@
     "declaration": true
   },
   "files": [
-    "ng2-highcharts.ts"
+    "ng2-highcharts.ts",
+    "typings/browser.d.ts"
   ]
 }

@@ -1,4 +1,3 @@
-/// <reference path="../../typings/browser.d.ts" />
 import {Directive, ElementRef, Input, OnDestroy} from '@angular/core';
 
 @Directive({
