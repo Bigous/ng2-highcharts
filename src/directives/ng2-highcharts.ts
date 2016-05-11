@@ -1,5 +1,4 @@
-/// <reference path="../../typings/browser.d.ts" />
-import {Directive, ElementRef, Input, OnDestroy} from 'angular2/core';
+import {Directive, ElementRef, Input, OnDestroy} from '@angular/core';
 
 @Directive({
 	selector: '[ng2-highcharts]',

@@ -1,3 +1,6 @@
+# 0.3.2
+Upgraded to support Angular 2.0.0-rc.1
+
 # 0.3.0
 
 1. Exports the directive object, so you can interact with the directive inside the template without having to write code [see it better explained here](http://blog.thoughtram.io/angular/2016/03/21/template-driven-forms-in-angular-2.html)

@@ -9,6 +9,9 @@ npm-debug.log
 # *.ts
 !*.d.ts
 
+# Typings
+typings/*
+
 # JetBrains
 .idea
 .project
