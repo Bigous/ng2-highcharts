@@ -9,7 +9,13 @@
     "declaration": true
   },
   "files": [
-    "ng2-highcharts.ts",
+    "src/index.ts",
+    "src/ng2-highcharts.ts",
+    "src/ng2-highstocks.ts",
+    "src/ng2-highmaps.ts",
     "typings/browser.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
