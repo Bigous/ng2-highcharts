@@ -4,16 +4,13 @@
     "module": "commonjs",
     "target": "es5",
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
+		"experimentalDecorators": true,
     "sourceMap": true,
     "declaration": true
   },
   "files": [
     "src/index.ts",
-    "src/ng2-highcharts.ts",
-    "src/ng2-highstocks.ts",
-    "src/ng2-highmaps.ts",
-    "typings/browser.d.ts"
+    "typings/index.d.ts"
   ],
   "exclude": [
     "node_modules"
