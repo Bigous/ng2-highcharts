@@ -3,8 +3,8 @@
   "version": "0.3.4",
   "scripts": {
     "test": "typings install && echo No tests available yet...",
-    "prepublish": "typings install && tsc",
-    "tsc": "typings install && tsc"
+    "prepublish": "typings install && tsc --outDir .",
+    "tsc": "typings install && tsc --outDir ."
   },
   "repository": {
     "type": "git",
@@ -22,9 +22,11 @@
   "bugs": {
     "url": "https://github.com/Bigous/ng2-highcharts/issues"
   },
-  "main": "ng2-highcharts.js",
-  "typings": "./ng2-highcharts.d.ts",
-  "dependencies": {},
+  "main": "index.js",
+  "typings": "./index.d.ts",
+  "dependencies": {
+    "highcharts": "^4.2.1"
+  },
   "devDependencies": {
     "@angular/core": "2.0.0-rc.1",
     "es6-shim": "^0.35.0",
