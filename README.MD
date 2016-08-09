@@ -28,7 +28,7 @@ A running example on how to use this library can be found at [AngularShowcase](h
   ```
 * Import `Ng2Highcharts` in the component
   ```
-  import { Ng2Highcharts } from 'ng2-highcharts/ng2-highcharts';
+  import { Ng2Highcharts } from 'ng2-highcharts';
   ```
 * Include `Ng2Highcharts` in the directives
   ```
