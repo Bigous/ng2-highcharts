@@ -1,4 +1,10 @@
+# 0.4.0
+
+Upgrade to support Angular 2.0.0-rc.6
+Module definition was created.
+
 # 0.3.2
+
 Upgraded to support Angular 2.0.0-rc.1
 
 # 0.3.0
@@ -9,4 +15,4 @@ Upgraded to support Angular 2.0.0-rc.1
 	- `ng2-highstock` is exported as `ng2Highstock`
 - All the 3 directives now have the getter `chart` method. It returns the current chart object. Note that if you change the `options`, the chart will be destroyed and you will need to call chart again to get the new chart created again to interact with it.
 - Readme.md was updated with an example on how to use this library with Webpack.
-- Changelob.md was created.
+- Changelog.md was created.

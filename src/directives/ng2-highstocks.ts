@@ -1,8 +1,7 @@
 import {Directive, ElementRef, Input, OnDestroy} from '@angular/core';
 
 @Directive({
-	selector: '[ng2-highstocks]',
-	exportAs: 'ng2Highstocks'
+	selector: '[ng2-highstocks]'
 })
 export class Ng2Highstocks implements OnDestroy {
 	hostElement: ElementRef;

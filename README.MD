@@ -76,9 +76,89 @@ A running example on how to use this library can be found at [AngularShowcase](h
   };
   ```
 * Update template with the required directive
-  ```
+
+```html
+<div [ng2-highcharts]="chartData"></div>
+```
+
+## Usage with ionic v2 (ng2-highcharts v0.3.5)
+
+1. install the ionic CLI, `npm i -g ionic`
+2. Start a sample project, `ionic start myApp blank --v2`
+3. install highcharts and ng2-highcharts, `npm install highcharts ng2-highcharts --save`
+4. Add typings for highcharts, `typings install dt~highcharts --global --save`
+5. Import into `app/pages/home/home.ts`.
+
+```typescript
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { Ng2Highcharts } from 'ng2-highcharts';
+@Component({
+  templateUrl: 'build/pages/home/home.html',
+  directives: [Ng2Highcharts]
+})
+export class HomePage {
+  private chartData = {
+    chart: {
+      type: 'column'
+    },
+    xAxis: {
+      categories: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    },
+    series: [
+      {
+        name: 'NC',
+        data: [7057, 6858, 6643, 6570, 6115, 107, 31, 635, 203, 2, 2]
+      }, {
+        name: 'OK',
+        data: [54047, 52484, 50591, 49479, 46677, 33, 156, 947, 408, 6, 2]
+      }, {
+        name: 'KO',
+        data: [11388, 11115, 10742, 10757, 10290, 973, 914, 4054, 732, 34, 2]
+      }, {
+        name: 'VALID',
+        data: [8836, 8509, 8255, 7760, 7621, 973, 914, 4054, 732, 34, 2]
+      }, {
+        name: 'CHECK',
+        data: [115, 162, 150, 187, 172, 973, 914, 4054, 732, 34, 2]
+      }, {
+        name: 'COR',
+        data: [12566, 12116, 11446, 10749, 10439, 973, 914, 4054, 732, 34, 2]
+      }
+    ]
+  };
+  constructor(public navCtrl: NavController) {
+
+  }
+}
+```
+
+6. Add chart to `app/pages/home/home.html`
+
+```html
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
   <div [ng2-highcharts]="chartData"></div>
-  ```
+</ion-content>
+```
+
+7. The hack step. Add the following 2 lines to top of `app/app.ts` so ionic can embed highcharts correctly to your bundle:
+
+```typescript
+import * as HC from 'highcharts';
+window['Highcharts'] = HC;
+```
+
+8. Run `ionic serve`, open browser.
+
+
 ## Changelog
 
 Look at [changelog page](CHANGELOG.md)

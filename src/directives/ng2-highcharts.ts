@@ -1,8 +1,7 @@
 import {Directive, ElementRef, Input, OnDestroy} from '@angular/core';
 
 @Directive({
-	selector: '[ng2-highcharts]',
-	exportAs: 'ng2Highcharts'
+	selector: '[ng2-highcharts]'
 })
 export class Ng2Highcharts implements OnDestroy {
 	hostElement: ElementRef;

@@ -1,8 +1,7 @@
 import {Directive, ElementRef, Input, OnDestroy} from '@angular/core';
 
 @Directive({
-	selector: '[ng2-highmaps]',
-	exportAs: 'ng2Highmaps'
+	selector: '[ng2-highmaps]'
 })
 export class Ng2Highmaps implements OnDestroy {
 	hostElement: ElementRef;
