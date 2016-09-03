@@ -165,11 +165,9 @@ Look at [changelog page](CHANGELOG.md)
 
 ## Contributors
 
-[<img alt="Bigous" src="https://avatars.githubusercontent.com/u/6886560?v=3&s=117" width="117">](https://github.com/Bigous) |[<img alt="NathanWalker" src="https://avatars.githubusercontent.com/u/457187?v=3&s=117" width="117">](https://github.com/NathanWalker) |[<img alt="drdino" src="https://avatars.githubusercontent.com/u/2923711?v=3&s=117" width="117">](https://github.com/drdino) |[<img alt="k3nsei" src="https://avatars.githubusercontent.com/u/190422?v=3&s=117" width="117">](https://github.com/k3nsei) |[<img alt="sasidhar" src="https://avatars.githubusercontent.com/u/897339?v=3&s=117" width="117">](https://github.com/sasidhar) |
-:---: |:---: |:---: |:---: |:---: |
-[Bigous](https://github.com/Bigous) |[NathanWalker](https://github.com/NathanWalker) |[drdino](https://github.com/drdino) |[k3nsei](https://github.com/k3nsei) |[sasidhar](https://github.com/sasidhar) |
+[<img alt="Bigous" src="https://avatars.githubusercontent.com/u/6886560?v=3&s=117" width="117">](https://github.com/Bigous)[<img alt="k3nsei" src="https://avatars.githubusercontent.com/u/190422?v=3&s=117" width="117">](https://github.com/k3nsei)[<img alt="sasidhar" src="https://avatars.githubusercontent.com/u/897339?v=3&s=117" width="117">](https://github.com/sasidhar)[<img alt="josx" src="https://avatars.githubusercontent.com/u/791137?v=3&s=117" width="117">](https://github.com/josx)[<img alt="nickmorton" src="https://avatars.githubusercontent.com/u/11538384?v=3&s=117" width="117">](https://github.com/nickmorton)[<img alt="NathanWalker" src="https://avatars.githubusercontent.com/u/457187?v=3&s=117" width="117">](https://github.com/NathanWalker)
 
-
+[<img alt="pleerock" src="https://avatars.githubusercontent.com/u/1753397?v=3&s=117" width="117">](https://github.com/pleerock)[<img alt="tianyi-wang-rockalltech" src="https://avatars.githubusercontent.com/u/20535575?v=3&s=117" width="117">](https://github.com/tianyi-wang-rockalltech)
 
 ## License
 
