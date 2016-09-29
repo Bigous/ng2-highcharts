@@ -3,8 +3,8 @@
   "version": "0.4.1",
   "scripts": {
     "test": "typings install && echo No tests available yet...",
-    "prepublish": "typings install && tsc --outDir .",
-    "tsc": "typings install && tsc --outDir ."
+    "prepublish": "typings install && ngc --outDir .",
+    "tsc": "ngc --outDir ."
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,12 @@
     "highcharts": "^4.2.1"
   },
   "devDependencies": {
-    "@angular/core": "2.0.0",
+    "@angular/common": "^2.0.1",
+    "@angular/compiler": "^2.0.1",
+    "@angular/compiler-cli": "^0.6.3",
+    "@angular/core": "^2.0.1",
+    "@angular/platform-browser": "^2.0.1",
+    "@angular/platform-server": "^2.0.1",
     "es6-shim": "^0.35.0",
     "highcharts": "^4.2.1",
     "reflect-metadata": "^0.1.3",

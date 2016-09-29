@@ -4,9 +4,10 @@
     "module": "commonjs",
     "target": "es5",
     "emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
+    "experimentalDecorators": true,
     "sourceMap": true,
-    "declaration": true
+    "declaration": true,
+    "outDir": "."
   },
   "files": [
     "src/index.ts",
@@ -14,5 +15,9 @@
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "genDir": "aot",
+    "skipMetadataEmit": false
+  }
 }
