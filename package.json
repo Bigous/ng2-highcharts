@@ -1,6 +1,6 @@
 {
   "name": "ng2-highcharts",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "scripts": {
     "test": "echo No tests available yet...",
     "prepublish": "ngc",
