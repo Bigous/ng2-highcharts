@@ -2,9 +2,9 @@
   "name": "ng2-highcharts",
   "version": "0.4.2",
   "scripts": {
-    "test": "typings install && echo No tests available yet...",
-    "prepublish": "typings install && ngc --outDir .",
-    "tsc": "ngc --outDir ."
+    "test": "echo No tests available yet...",
+    "prepublish": "ngc",
+    "tsc": "ngc"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,8 @@
   "main": "index.js",
   "typings": "./index.d.ts",
   "dependencies": {
+    "@types/es6-shim": "^0.31.32",
+    "@types/highcharts": "^4.2.36",
     "highcharts": "^4.2.1"
   },
   "devDependencies": {
