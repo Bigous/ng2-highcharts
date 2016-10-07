@@ -7,7 +7,7 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
     "postversion": "npm run changelog",
     "prepublish": "ngc",
-    "tsc": "ngc"
+    "build": "ngc"
   },
   "repository": {
     "type": "git",
@@ -26,10 +26,10 @@
     "url": "https://github.com/Bigous/ng2-highcharts/issues"
   },
   "main": "index.js",
+  "module": "index.js",
   "typings": "./index.d.ts",
   "dependencies": {
-    "@types/es6-shim": "^0.31.32",
-    "@types/highcharts": "^4.2.36",
+    "@types/highcharts": "^4.2.1",
     "highcharts": "^4.2.1"
   },
   "devDependencies": {
