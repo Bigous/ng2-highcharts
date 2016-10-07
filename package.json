@@ -3,7 +3,9 @@
   "version": "0.5.1",
   "scripts": {
     "test": "echo No tests available yet...",
-    "postinstall": "npm prune",
+    "postinstall": "npm prune && node tools/commit-msg.js",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
+    "postversion": "npm run changelog",
     "prepublish": "ngc",
     "tsc": "ngc"
   },
@@ -37,6 +39,8 @@
     "@angular/core": "^2.0.1",
     "@angular/platform-browser": "^2.0.1",
     "@angular/platform-server": "^2.0.1",
+    "angular-precommit": "^1.0.3",
+    "conventional-changelog-cli": "^1.2.0",
     "es6-shim": "^0.35.0",
     "highcharts": "^4.2.1",
     "reflect-metadata": "^0.1.3",
