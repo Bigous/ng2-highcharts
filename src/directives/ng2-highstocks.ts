@@ -1,17 +1,17 @@
-import {Directive, ElementRef, Input, OnDestroy, DoCheck} from '@angular/core';
+import {Directive, ElementRef, Input, KeyValueDiffers} from '@angular/core';
+import {Ng2HighchartsBase} from "./ng2-highcharts-base";
 
 @Directive({
 	selector: '[ng2-highstocks]'
 })
-export class Ng2Highstocks implements OnDestroy, DoCheck {
-	hostElement: ElementRef;
-	pChart: HighchartsChartObject;
-	currentWidth:number;
-	constructor(ele: ElementRef) {
-		this.hostElement = ele;
+export class Ng2Highstocks extends Ng2HighchartsBase {
+	@Input('ng2-highstocks') options:HighchartsOptions;
+
+	constructor(ele: ElementRef,_differs:KeyValueDiffers) {
+		super(ele,_differs);
 	}
 
-	@Input('ng2-highstocks') set options(opt: HighchartsOptions) {
+	draw(opt: HighchartsOptions): void {
 		if (!opt) {
 			console.log('No valid options...');
 			console.log(opt);
@@ -29,40 +29,6 @@ export class Ng2Highstocks implements OnDestroy, DoCheck {
 		} else {
 			console.log('No valid options...');
 			console.dir(opt);
-		}
-	}
-
-
-	public get chart() : HighchartsChartObject {
-		return this.pChart;
-	}
-
-	reflow() {
-		if(!this.pChart) return;
-
-		if(getComputedStyle(this.hostElement.nativeElement).transitionDuration) {
-			var duration = parseFloat(getComputedStyle(this.hostElement.nativeElement).transitionDuration);
-			var interval = setInterval(()=>{
-				if(duration < 0) clearInterval(interval);
-				this.pChart.reflow();
-				interval -= 50;
-			},duration);
-		}
-
-		this.pChart.reflow();
-	}
-
-	ngDoCheck() {
-		if(this.currentWidth != this.hostElement.nativeElement.offsetWidth) {
-			this.reflow();
-			this.currentWidth = this.hostElement.nativeElement.offsetWidth;
-		}
-	}
-
-
-	ngOnDestroy() {
-		if (this.pChart) {
-			this.pChart.destroy();
 		}
 	}
 }
