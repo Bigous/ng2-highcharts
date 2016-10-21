@@ -1,11 +1,12 @@
-import {Directive, ElementRef, Input, OnDestroy} from '@angular/core';
+import {Directive, ElementRef, Input, OnDestroy, DoCheck} from '@angular/core';
 
 @Directive({
 	selector: '[ng2-highstocks]'
 })
-export class Ng2Highstocks implements OnDestroy {
+export class Ng2Highstocks implements OnDestroy, DoCheck {
 	hostElement: ElementRef;
 	pChart: HighchartsChartObject;
+	currentWidth:number;
 	constructor(ele: ElementRef) {
 		this.hostElement = ele;
 	}
@@ -34,6 +35,28 @@ export class Ng2Highstocks implements OnDestroy {
 
 	public get chart() : HighchartsChartObject {
 		return this.pChart;
+	}
+
+	reflow() {
+		if(!this.pChart) return;
+
+		if(getComputedStyle(this.hostElement.nativeElement).transitionDuration) {
+			var duration = parseFloat(getComputedStyle(this.hostElement.nativeElement).transitionDuration);
+			var interval = setInterval(()=>{
+				if(duration < 0) clearInterval(interval);
+				this.pChart.reflow();
+				interval -= 50;
+			},duration);
+		}
+
+		this.pChart.reflow();
+	}
+
+	ngDoCheck() {
+		if(this.currentWidth != this.hostElement.nativeElement.offsetWidth) {
+			this.reflow();
+			this.currentWidth = this.hostElement.nativeElement.offsetWidth;
+		}
 	}
 
 
