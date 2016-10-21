@@ -1,3 +1,10 @@
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/Bigous/ng2-highcharts/compare/v0.5.1...v0.6.0) (2016-10-21)
+
+Added method reflow #46
+chore(changelog): Changlog is now generated automatically.
+chore(commit): Commits must have angular format [definitions here](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#)
+
 <a name="0.5.1"></a>
 ## [0.5.1](https://github.com/Bigous/ng2-highcharts/compare/v0.5.0...v0.5.1) (2016-10-05)
 
