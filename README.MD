@@ -87,7 +87,7 @@ A running example on how to use this library can be found at [AngularShowcase](h
 <div [ng2-highcharts]="chartData"></div>
 ```
 
-## Usage with ionic v2 (ng2-highcharts v0.3.5)
+## Usage with ionic v2 ( vBeta.11 with ng2-highcharts v0.3.5)
 
 1. install the ionic CLI, `npm i -g ionic`
 2. Start a sample project, `ionic start myApp blank --v2`
