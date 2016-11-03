@@ -1,6 +1,6 @@
 {
   "name": "ng2-highcharts",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "scripts": {
     "test": "echo No tests available yet...",
     "postinstall": "npm prune",
