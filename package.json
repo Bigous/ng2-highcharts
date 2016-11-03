@@ -3,11 +3,12 @@
   "version": "0.6.0",
   "scripts": {
     "test": "echo No tests available yet...",
-    "postinstall": "npm prune && node tools/commit-msg.js",
+    "postinstall": "npm prune",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1",
     "postversion": "npm run changelog",
     "prepublish": "ngc",
-    "build": "ngc"
+    "build": "ngc",
+    "add-commit-check": "node tools/commit-msg.js"
   },
   "repository": {
     "type": "git",
