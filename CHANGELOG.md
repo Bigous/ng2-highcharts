@@ -5,7 +5,17 @@ All notable changes to this project will be documented in this file. See [standa
 <a name="0.6.3"></a>
 ## [0.6.3](https://github.com/Bigous/ng2-highcharts/compare/v0.6.2...v0.6.3) (2016-11-07)
 
+Updated the changelog to standard-version.
 
+<a name="0.6.2"></a>
+## [0.6.3](https://github.com/Bigous/ng2-highcharts/compare/v0.6.1...v0.6.2) (2016-11-07)
+
+Fixed the use of unexported references from highcharts.d.ts
+
+<a name="0.6.1"></a>
+## [0.6.3](https://github.com/Bigous/ng2-highcharts/compare/v0.6.0...v0.6.1) (2016-11-07)
+
+Fixed the postinstall script. Closes #49.
 
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/Bigous/ng2-highcharts/compare/v0.5.1...v0.6.0) (2016-10-21)
