@@ -1,17 +1,17 @@
-import {Directive, ElementRef, Input, KeyValueDiffers} from '@angular/core';
-import {Ng2HighchartsBase} from "./ng2-highcharts-base";
+import { Directive, ElementRef, Input, KeyValueDiffers } from '@angular/core';
+import { Ng2HighchartsBase } from "./ng2-highcharts-base";
 
 @Directive({
 	selector: '[ng2-highmaps]'
 })
 export class Ng2Highmaps extends Ng2HighchartsBase {
-	@Input('ng2-highmaps') options:HighchartsOptions;
+	@Input('ng2-highmaps') options: Object /* HighchartsOptions */;
 
-	constructor(ele: ElementRef,_differs:KeyValueDiffers) {
-		super(ele,_differs);
+	constructor(ele: ElementRef, _differs: KeyValueDiffers) {
+		super(ele, _differs);
 	}
 
-	draw(opt: HighchartsOptions): void {
+	draw(opt: any /* HighchartsOptions */): void {
 		if (!opt) {
 			console.log('No valid options...');
 			console.log(opt);
