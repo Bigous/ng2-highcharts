@@ -1,6 +1,6 @@
 {
   "name": "ng2-highcharts",
-  "version": "0.0.0-semantic-release",
+  "version": "0.6.5",
   "scripts": {
     "test": "echo No tests available yet...",
     "commit": "git-cz",
