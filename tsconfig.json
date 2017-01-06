@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
     "noImplicitAny": true,
-    "module": "commonjs",
+    "module": "es2015",
     "target": "es5",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "sourceMap": true,
     "declaration": true,
-    "outDir": ".",
     "moduleResolution": "node",
+    "noUnusedLocals": true,
     "lib": [
       "dom",
       "es2015"
@@ -18,13 +17,19 @@
     ]
   },
   "files": [
-    "src/index.ts"
+    "index.ts",
+    "ng2-highcharts.ts",
+    "./src/ng2-highcharts-base.ts",
+    "./src/ng2-highcharts.ts",
+    "./src/ng2-highmaps.ts",
+    "./src/ng2-highstocks.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "bundles"
   ],
   "angularCompilerOptions": {
-    "genDir": "aot",
-    "skipMetadataEmit": false
+    "strictMetadataEmit": true,
+    "skipTemplateCodegen": true
   }
 }

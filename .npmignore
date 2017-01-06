@@ -1,35 +1,47 @@
-# Node
+#################
+## Misc
+#################
+nbproject
+manifest.mf
+build.xml
 node_modules/*
 npm-debug.log
-tsconfig.json
-
-# DO NOT IGNORE TYPESCRIPT FILES FOR NPM
-# TypeScript
-# *.js
-# *.map
-# *.ts
+*.ts
 !*.d.ts
+tests
+examples
+.github
+coverage
+!*.metadata.json
+!bundles/*.js
 
-# Typings
-typings/*
-
-# JetBrains
+#################
+## JetBrains
+#################
 .idea
 .project
 .settings
-.idea/*
-*.iml
 
-# Windows
+############
+## Windows
+############
+
+# Windows image file caches
 Thumbs.db
+
+# Folder config file
 Desktop.ini
 
-# Mac
+############
+## Mac
+############
+
+# Mac crap
 .DS_Store
 **/.DS_Store
 
 # VSCode
 .vscode
 
-# Tools
-tools
+# Config
+config

@@ -2,10 +2,10 @@ import { Directive, ElementRef, Input, KeyValueDiffers } from '@angular/core';
 import { Ng2HighchartsBase } from "./ng2-highcharts-base";
 
 @Directive({
-	selector: '[ng2-highstocks]'
+	selector: '[ng2-highcharts]'
 })
-export class Ng2Highstocks extends Ng2HighchartsBase {
-	@Input('ng2-highstocks') options: Object /* HighchartsOptions */;
+export class Ng2Highcharts extends Ng2HighchartsBase {
+	@Input('ng2-highcharts') options: Object /* HighchartsOptions */;
 
 	constructor(ele: ElementRef, _differs: KeyValueDiffers) {
 		super(ele, _differs);
@@ -25,7 +25,7 @@ export class Ng2Highstocks extends Ng2HighchartsBase {
 				opt.chart = {};
 			}
 			opt.chart.renderTo = this.hostElement.nativeElement;
-			this.pChart = new (<any>Highcharts).StockChart(opt);
+			this.pChart = new (<any>window).Highcharts.Chart(opt);
 		} else {
 			console.log('No valid options...');
 			console.dir(opt);

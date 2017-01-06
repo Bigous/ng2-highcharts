@@ -20,12 +20,12 @@ export abstract class Ng2HighchartsBase implements OnDestroy, DoCheck {
 	}
 
 	reflow() {
-		if (!this.pChart || !this.options) return;
+		if (!this.pChart || !this.options) { return; }
 
 		if (getComputedStyle(this.hostElement.nativeElement).transitionDuration) {
 			var duration = parseFloat(getComputedStyle(this.hostElement.nativeElement).transitionDuration);
 			var interval = setInterval(() => {
-				if (duration < 0) clearInterval(interval);
+				if (duration < 0) { clearInterval(interval); }
 				this.pChart.reflow();
 				duration -= 50;
 			}, duration);
@@ -35,11 +35,11 @@ export abstract class Ng2HighchartsBase implements OnDestroy, DoCheck {
 	}
 
 	ngDoCheck() {
-		if (this.currentWidth != this.hostElement.nativeElement.offsetWidth) {
+		if (this.currentWidth !== this.hostElement.nativeElement.offsetWidth) {
 			this.reflow();
 			this.currentWidth = this.hostElement.nativeElement.offsetWidth;
 		}
-		if (this.currentHeight != this.hostElement.nativeElement.offsetHeight) {
+		if (this.currentHeight !== this.hostElement.nativeElement.offsetHeight) {
 			this.reflow();
 			this.currentHeight = this.hostElement.nativeElement.offsetHeight;
 		}
