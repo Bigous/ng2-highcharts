@@ -11,7 +11,7 @@ $ npm install --save highcharts@^4.2.1
 Also make sure you install the typings for Highcharts:
 
 ```bash
-$ typings install @types/highcharts --save
+$ npm install @types/highcharts --save
 ```
 
 Then, install this library running:
