@@ -9,7 +9,7 @@ export abstract class Ng2HighchartsBase implements OnDestroy, DoCheck {
 	pChart: any;//HighchartsChartObject;
 	currentWidth: number;
 	currentHeight: number;
-	differ: KeyValueDiffer;
+	differ: KeyValueDiffer<any, any>;
 	constructor(ele: ElementRef, _differs: KeyValueDiffers) {
 		this.hostElement = ele;
 		this.differ = _differs.find({}).create(null);
