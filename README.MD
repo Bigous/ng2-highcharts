@@ -1,5 +1,12 @@
 # ng2-highcharts
 
+[![travis build](https://img.shields.io/travis/Bigous/ng2-highcharts.svg)](https://travis-ci.org/Bigous/ng2-highcharts)
+
+## Breaking change
+
+* From version 0.x.x to 1.x.x:
+	The `KeyValueDiffer` type has changed to `KeyValueDiffer<type, type>` and it breaks the build, so, people using angular prior to 4.0.0, should continue to use `ng2-highcharts 0.x.x`
+
 ## Installation
 
 To install this library, install peer dependencies first:
@@ -22,7 +29,7 @@ $ npm install --save ng2-highcharts
 
 ## Usage
 
-To use this library, you must load ```angular2``` (and its dependencies) and ```highcharts```.
+To use this library, you must load ```angular >= 4.0.0``` (and its dependencies) and ```highcharts```.
 
 We highly recomend the usage of a seed project or a generator. [Angular-seed](https://github.com/mgechev/angular-seed) and [Quickstart](https://github.com/angular/quickstart) are my favorite seeds and [Angular-Cli](https://cli.angular.io/) and [Ionic v2](https://ionicframework.com/) are my favorite generators, but you can use any one for your project.
 
