@@ -26,8 +26,10 @@ export abstract class Ng2HighchartsBase implements OnDestroy, DoCheck {
 			var duration = parseFloat(getComputedStyle(this.hostElement.nativeElement).transitionDuration);
 			var interval = setInterval(() => {
 				if (duration < 0) { clearInterval(interval); }
-				this.pChart.reflow();
 				duration -= 50;
+				try {
+					this.pChart.reflow();
+				} catch (e) {}
 			}, duration);
 		}
 
