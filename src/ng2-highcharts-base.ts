@@ -29,7 +29,10 @@ export abstract class Ng2HighchartsBase implements OnDestroy, DoCheck {
 				duration -= 50;
 				try {
 					this.pChart.reflow();
-				} catch (e) {}
+				} catch (e) {
+					// all right - component probably has been deleted.
+					clearInterval(interval);
+				}
 			}, duration);
 		}
 
