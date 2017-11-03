@@ -1,6 +1,6 @@
 {
   "name": "ng2-highcharts",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "test": "echo No tests available yet...",
     "commit": "git-cz",
@@ -27,7 +27,7 @@
   "main": "bundles/ng2-highcharts.umd.js",
   "module": "index.js",
   "typings": "index.d.ts",
-  "homepage": "https://githuc.com/Bigous/ng2-highcharts",
+  "homepage": "https://github.com/Bigous/ng2-highcharts",
   "dependencies": {
     "@types/highcharts": "^4.2.1"
   },
