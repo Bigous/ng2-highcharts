@@ -28,11 +28,11 @@
   "module": "index.js",
   "typings": "index.d.ts",
   "homepage": "https://github.com/Bigous/ng2-highcharts",
-  "dependencies": {
-    "@types/highcharts": "^4.2.1"
-  },
+  "dependencies": {},
   "peerDependencies": {
-    "@angular/core": "^4.0.0 || ^5.0.0"
+    "@angular/core": "^4.0.0 || ^5.0.0",
+    "@types/highcharts": ">=4.2.1",
+    "highcharts": ">=4.2.1 <7.0.0"
   },
   "devDependencies": {
     "@angular/common": "^4.0.0",
@@ -43,6 +43,7 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/platform-server": "^4.0.0",
     "typescript": "^2.2.1",
+    "@types/highcharts": "^4.2.1",
     "@types/node": "6.0.52",
     "awesome-typescript-loader": "3.0.0-beta.17",
     "codelyzer": "2.0.0-beta.3",
@@ -52,7 +53,7 @@
     "istanbul-instrumenter-loader": "0.2.0",
     "loader-utils": "0.2.16",
     "reflect-metadata": "0.1.8",
-    "rxjs": "5.0.0-rc.4",
+    "rxjs": "5.4.2",
     "semantic-release": "^6.3.2",
     "source-map-loader": "0.1.5",
     "ts-helpers": "1.1.2",
