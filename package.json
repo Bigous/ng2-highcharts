@@ -30,7 +30,7 @@
   "homepage": "https://github.com/Bigous/ng2-highcharts",
   "dependencies": {},
   "peerDependencies": {
-    "@angular/core": "^4.0.0 || ^5.0.0 || ^6.0.0",
+    "@angular/core": ">=4.0.0",
     "@types/highcharts": ">=4.2.1",
     "highcharts": ">=4.2.1 <7.0.0"
   },
