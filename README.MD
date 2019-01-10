@@ -2,6 +2,12 @@
 
 [![travis build](https://img.shields.io/travis/Bigous/ng2-highcharts.svg)](https://travis-ci.org/Bigous/ng2-highcharts)
 
+# Unmaintaned
+
+Highcharts has released their own angular wrapper which we recomend you to use. (https://github.com/highcharts/highcharts-angular)[https://github.com/highcharts/highcharts-angular].
+
+For older projects, this will be continue to be available without maintenance.
+
 ## Breaking change
 
 * From version 0.x.x to 1.x.x:
